@@ -16,10 +16,10 @@ def top_ratings(user_id, count):
     top_ratings = recommendation_engine.get_top_ratings(user_id,count)
     return json.dumps(top_ratings)
  
-@main.route("/<int:user_id>/ratings/<int:movie_id>", methods=["GET"])
-def movie_ratings(user_id, movie_id):
-    logger.debug("User %s rating requested for movie %s", user_id, movie_id)
-    ratings = recommendation_engine.get_ratings_for_movie_ids(user_id, [movie_id])
+@main.route("/<int:user_id>/ratings/<int:book_id>", methods=["GET"])
+def book_ratings(user_id, book_id):
+    logger.debug("User %s rating requested for book %s", user_id, book_id)
+    ratings = recommendation_engine.get_ratings_for_book_ids(user_id, [book_id])
     return json.dumps(ratings)
  
  
@@ -28,7 +28,7 @@ def add_ratings(user_id):
     # get the ratings from the Flask POST request object
     ratings_list = request.form.keys()[0].strip().split("\n")
     ratings_list = map(lambda x: x.split(","), ratings_list)
-    # create a list with the format required by the negine (user_id, movie_id, rating)
+    # create a list with the format required by the negine (user_id, book_id, rating)
     ratings = map(lambda x: (user_id, int(x[0]), float(x[1])), ratings_list)
     # add them to the model using then engine API
     recommendation_engine.add_ratings(ratings)
