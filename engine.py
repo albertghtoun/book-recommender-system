@@ -79,8 +79,13 @@ class RecommendationEngine:
         """
         predicted_RDD = self.model.predictAll(user_and_book_RDD)
         predicted_rating_RDD = predicted_RDD.map(lambda x: (x.product, x.rating))
+        print predicted_rating_RDD.take(5)
+        print self.books_titles_RDD.take(5)
+        print self.books_rating_counts_RDD.take(5)
+
         predicted_rating_title_and_count_RDD = \
             predicted_rating_RDD.join(self.books_titles_RDD).join(self.books_rating_counts_RDD)
+        print predicted_rating_title_and_count_RDD.take(5)
         predicted_rating_title_and_count_RDD = \
             predicted_rating_title_and_count_RDD.map(lambda r: (r[1][0][1], r[1][0][0], r[1][1]))
         
@@ -150,10 +155,11 @@ class RecommendationEngine:
         logger.info("Starting up the Recommendation Engine: ")
         self.sc = sc
 
-        # test if model is exist, if it is, load the model.
         self.model_path = os.path.join('models')
-        ret = call(["hadoop", "fs", "-test", "-e", "models"])
-        
+        # test if model is exist, if it is, load the model.
+        # ret = call(["hadoop", "fs", "-test", "-e", "models"])
+    
+        ret = 1 
         if ret == 0:   # the model is exist
             print "the model folder exists. just load data and model."
             # Load ratings data for later use
@@ -168,8 +174,8 @@ class RecommendationEngine:
             books_raw_RDD = self.sc.textFile(books_file_path)
             books_raw_data_header = books_raw_RDD.take(1)[0]
             self.books_RDD = books_raw_RDD.filter(lambda line: line!=books_raw_data_header)\
-                .map(lambda line: line.split(";")).map(lambda tokens: (int(tokens[0]),tokens[1],tokens[2])).cache()
-            self.books_titles_RDD = self.books_RDD.map(lambda x: (int(x[0]),x[1])).cache()
+                .map(lambda line: line.split(";")).map(lambda tokens: (int(tokens[0]),tokens[1], tokens[2], tokens[3], tokens[4], tokens[5], tokens[6], tokens[7], tokens[8])).cache()
+            self.books_titles_RDD = self.books_RDD.map(lambda x: (int(x[0]),x[1], x[2], x[3])).cache()
             print self.books_RDD.take(3)
             
             self.model = MatrixFactorizationModel.load(sc, self.model_path)
@@ -188,9 +194,13 @@ class RecommendationEngine:
         # Load ratings data
         logger.info("Loading Large Ratings data...")
         self.load_ratings(dataset_path, 'book-ratings2.csv', [7, 0, 3])
-        # Train the model
+        
+        #for itr in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]:
+        #print "training %d iteration." % (itr)          
+        self.iterations = 16
+            # Train the model
         self.__train_model()
-        # Test the model
+            # Test the model
         self.__test_model()
 
         # Load books data
@@ -199,8 +209,8 @@ class RecommendationEngine:
         books_raw_RDD = self.sc.textFile(books_file_path)
         books_raw_data_header = books_raw_RDD.take(1)[0]
         self.books_RDD = books_raw_RDD.filter(lambda line: line!=books_raw_data_header)\
-            .map(lambda line: line.split(";")).map(lambda tokens: (int(tokens[0]),tokens[1],tokens[2])).cache()
-        self.books_titles_RDD = self.books_RDD.map(lambda x: (int(x[0]),x[1])).cache()
+            .map(lambda line: line.split(";")).map(lambda tokens: (int(tokens[0]),tokens[1],tokens[2], tokens[3], tokens[4], tokens[5], tokens[6], tokens[7], tokens[8])).cache()
+        self.books_titles_RDD = self.books_RDD.map(lambda x: (int(x[0]),x[1], x[2], x[3])).cache()
         print self.books_RDD.take(3)
  
         # Load ratings data for later use
@@ -211,4 +221,4 @@ class RecommendationEngine:
 
         # Train the largest model
         self.__train_model()
-        self.model.save(sc, self.model_path)
+        #self.model.save(sc, self.model_path)
