@@ -1,0 +1,777 @@
+INFO:engine:Starting up the Recommendation Engine: 
+INFO:engine:Loading Medium Ratings data...
+[(276726, 225830, 5.0), (276727, 11055, 5.0), (276729, 246855, 3.0)]
+training_RDD
+[(276727, 11055, 5.0), (276729, 246855, 3.0), (276729, 246856, 6.0)]
+validation_for_predict_RDD
+[(276726, 225830), (276746, 2031), (276746, 228)]
+test_for_predict_RDD
+[]
+[((507, 7548), 2.5040153936091656), ((277965, 4724), -2.8653450198190598), ((278418, 22488), -8.219524626728315), ((278257, 2912), 0.22093785004898336), ((278418, 1176), -0.5008848885748876)]
+[((741, 3189), (5.0, -3.0870514308022052)), ((254, 4476), (5.0, -4.030130334508328)), ((278418, 247158), (5.0, 4.660607739923563)), ((254, 2002), (5.0, -3.0680629520423963)), ((278418, 4760), (5.0, -0.2504424442874438))]
+The RMSE for rank 2 is 7.66024908018
+[((507, 7548), -1.6921446409374936), ((277965, 4724), -0.2205506325731612), ((278418, 22488), 6.499427361685502), ((278257, 2912), 2.381327226020227), ((278418, 1176), 5.274795806915442)]
+[((741, 3189), (5.0, -0.5007922755750016)), ((254, 4476), (5.0, -5.751909370254711)), ((278418, 247158), (5.0, 0.7192800976134084)), ((254, 2002), (5.0, 2.7061396356337113)), ((278418, 4760), (5.0, 2.637397903457721))]
+The RMSE for rank 4 is 6.11366526015
+[((507, 7548), 0.38695875730433826), ((277965, 4724), -0.5199454999992472), ((278418, 22488), -2.9529081807896964), ((278257, 2912), -2.7798251973042625), ((278418, 1176), 7.383722842750955)]
+[((741, 3189), (5.0, 0.8426410173336318)), ((254, 4476), (5.0, 1.057226062914924)), ((278418, 247158), (5.0, 0.5972517457923425)), ((254, 2002), (5.0, 4.1027767617329545)), ((278418, 4760), (5.0, 3.6918614213754775))]
+The RMSE for rank 6 is 5.59872902201
+[((507, 7548), 0.7407108336660215), ((277965, 4724), 4.427211599304192), ((278418, 22488), -3.193167094970543), ((278257, 2912), 3.5481649528046644), ((278418, 1176), 5.169035224449488)]
+[((741, 3189), (5.0, -0.3619430772346792)), ((254, 4476), (5.0, -0.6640064388212923)), ((278418, 247158), (5.0, 3.700721446992766)), ((254, 2002), (5.0, 0.39609568704356235)), ((278418, 4760), (5.0, 2.584517612224744))]
+The RMSE for rank 8 is 5.03157446478
+[((507, 7548), 0.8184080385933656), ((277965, 4724), 2.403537178170342), ((278418, 22488), -5.876357750631541), ((278257, 2912), 1.2043883173272671), ((278418, 1176), 1.7616368410201142)]
+[((741, 3189), (5.0, 1.924318116920949)), ((254, 4476), (5.0, -3.1178035628034935)), ((278418, 247158), (5.0, 1.517330547518373)), ((254, 2002), (5.0, 1.4025452022280511)), ((278418, 4760), (5.0, 0.8808184205100571))]
+The RMSE for rank 10 is 5.57082567433
+[((507, 7548), 1.2534648907173658), ((277965, 4724), 3.7558750798787908), ((278418, 22488), 0.7881819674058592), ((278257, 2912), 0.9464473588071642), ((278418, 1176), 4.561719569198516)]
+[((741, 3189), (5.0, 2.03210978128289)), ((254, 4476), (5.0, -0.3584976007363623)), ((278418, 247158), (5.0, 3.18113211854907)), ((254, 2002), (5.0, 0.3594525106800961)), ((278418, 4760), (5.0, 2.280859784599258))]
+The RMSE for rank 12 is 5.06521367845
+[((507, 7548), 3.00927077297555), ((277965, 4724), 2.6230685603435733), ((278418, 22488), -1.7387699283513953), ((278257, 2912), -1.5925636747911853), ((278418, 1176), 5.510148173072046)]
+[((741, 3189), (5.0, 1.462582014399227)), ((254, 4476), (5.0, -0.6710707635830264)), ((278418, 247158), (5.0, 1.725882001550421)), ((254, 2002), (5.0, 2.623793330759761)), ((278418, 4760), (5.0, 2.755074086536023))]
+The RMSE for rank 14 is 5.00883715475
+[((507, 7548), 0.9448796825371761), ((277965, 4724), 2.6315989931397534), ((278418, 22488), 0.19418667323444772), ((278257, 2912), 0.2429351483406067), ((278418, 1176), 4.8558968613820435)]
+[((741, 3189), (5.0, 1.5540145640769683)), ((254, 4476), (5.0, -0.42091311431857403)), ((278418, 247158), (5.0, 2.4653128648122813)), ((254, 2002), (5.0, 3.187849167776081)), ((278418, 4760), (5.0, 2.4279484306910217))]
+The RMSE for rank 16 is 4.89222785517
+The best model was trained with rank 16
+INFO:engine:Loading Large Ratings data...
+[(276726, 225830, 5.0), (276727, 11055, 5.0), (276729, 246855, 3.0)]
+training_RDD
+[(276727, 11055, 5.0), (276729, 246855, 3.0), (276733, 123646, 5.0)]
+validation_for_predict_RDD
+[]
+test_for_predict_RDD
+[(276726, 225830), (276729, 246856), (276746, 2031)]
+rank = 2.
+training 1 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(5681, 'ms')
+For testing data the RMSE is 7.80736968958
+training 2 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(4747, 'ms')
+For testing data the RMSE is 7.69146141406
+training 3 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6633, 'ms')
+For testing data the RMSE is 7.36686244253
+training 4 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(5272, 'ms')
+For testing data the RMSE is 6.71784074746
+training 5 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(5569, 'ms')
+For testing data the RMSE is 5.72079474306
+training 6 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(5678, 'ms')
+For testing data the RMSE is 4.6207371274
+training 7 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8008, 'ms')
+For testing data the RMSE is 3.84351846313
+training 8 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6393, 'ms')
+For testing data the RMSE is 3.38892486911
+training 9 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6880, 'ms')
+For testing data the RMSE is 3.14417567369
+training 10 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7004, 'ms')
+For testing data the RMSE is 3.00128313771
+training 11 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8712, 'ms')
+For testing data the RMSE is 2.90904391724
+training 12 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8745, 'ms')
+For testing data the RMSE is 2.85091525555
+training 13 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7960, 'ms')
+For testing data the RMSE is 2.81032216973
+training 14 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8477, 'ms')
+For testing data the RMSE is 2.7826760685
+training 15 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9045, 'ms')
+For testing data the RMSE is 2.75809638386
+training 16 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8757, 'ms')
+For testing data the RMSE is 2.73901719565
+rank = 4.
+training 1 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(3923, 'ms')
+For testing data the RMSE is 7.75359461952
+training 2 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(5173, 'ms')
+For testing data the RMSE is 6.94000043669
+training 3 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(4663, 'ms')
+For testing data the RMSE is 4.86733143311
+training 4 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7402, 'ms')
+For testing data the RMSE is 3.33185179287
+training 5 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(5368, 'ms')
+For testing data the RMSE is 2.81071670731
+training 6 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7215, 'ms')
+For testing data the RMSE is 2.60700141139
+training 7 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6443, 'ms')
+For testing data the RMSE is 2.50030007312
+training 8 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6808, 'ms')
+For testing data the RMSE is 2.43140878943
+training 9 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7159, 'ms')
+For testing data the RMSE is 2.38147254051
+training 10 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7448, 'ms')
+For testing data the RMSE is 2.34360749698
+training 11 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9316, 'ms')
+For testing data the RMSE is 2.31333600834
+training 12 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8275, 'ms')
+For testing data the RMSE is 2.28872112928
+training 13 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8866, 'ms')
+For testing data the RMSE is 2.26802770397
+training 14 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9339, 'ms')
+For testing data the RMSE is 2.25037599038
+training 15 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9226, 'ms')
+For testing data the RMSE is 2.23558597873
+training 16 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9533, 'ms')
+For testing data the RMSE is 2.22296725644
+rank = 6.
+training 1 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(5657, 'ms')
+For testing data the RMSE is 7.57261989083
+training 2 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6705, 'ms')
+For testing data the RMSE is 6.35932181549
+training 3 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(5344, 'ms')
+For testing data the RMSE is 4.09496365004
+training 4 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(5457, 'ms')
+For testing data the RMSE is 3.05303095552
+training 5 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7957, 'ms')
+For testing data the RMSE is 2.7135138305
+training 6 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9568, 'ms')
+For testing data the RMSE is 2.56033782538
+training 7 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(10267, 'ms')
+For testing data the RMSE is 2.47184973647
+training 8 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9073, 'ms')
+For testing data the RMSE is 2.41228205568
+training 9 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9387, 'ms')
+For testing data the RMSE is 2.36835424821
+training 10 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8337, 'ms')
+For testing data the RMSE is 2.33422334888
+training 11 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9894, 'ms')
+For testing data the RMSE is 2.30684798489
+training 12 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8793, 'ms')
+For testing data the RMSE is 2.28429183823
+training 13 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(11514, 'ms')
+For testing data the RMSE is 2.26533777479
+training 14 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9892, 'ms')
+For testing data the RMSE is 2.24914464989
+training 15 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(12012, 'ms')
+For testing data the RMSE is 2.23514180283
+training 16 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(12071, 'ms')
+For testing data the RMSE is 2.22291032109
+rank = 8.
+training 1 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6605, 'ms')
+For testing data the RMSE is 7.43527552065
+training 2 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6658, 'ms')
+For testing data the RMSE is 6.02205500153
+training 3 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(5556, 'ms')
+For testing data the RMSE is 3.78981209567
+training 4 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7028, 'ms')
+For testing data the RMSE is 2.99954351736
+training 5 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8127, 'ms')
+For testing data the RMSE is 2.71004596937
+training 6 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6738, 'ms')
+For testing data the RMSE is 2.56423436505
+training 7 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7665, 'ms')
+For testing data the RMSE is 2.47586298165
+training 8 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7721, 'ms')
+For testing data the RMSE is 2.41556260385
+training 9 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(11963, 'ms')
+For testing data the RMSE is 2.37098861885
+training 10 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(10765, 'ms')
+For testing data the RMSE is 2.33593982103
+training 11 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9441, 'ms')
+For testing data the RMSE is 2.30735132101
+training 12 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(11700, 'ms')
+For testing data the RMSE is 2.28347805108
+training 13 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(10371, 'ms')
+For testing data the RMSE is 2.26330444717
+training 14 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(13415, 'ms')
+For testing data the RMSE is 2.24610357984
+training 15 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(12832, 'ms')
+For testing data the RMSE is 2.23132137103
+training 16 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(13994, 'ms')
+For testing data the RMSE is 2.2185297755
+rank = 10.
+training 1 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6203, 'ms')
+For testing data the RMSE is 7.17042135461
+training 2 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(5169, 'ms')
+For testing data the RMSE is 4.85154512271
+training 3 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6586, 'ms')
+For testing data the RMSE is 3.31034346351
+training 4 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6301, 'ms')
+For testing data the RMSE is 2.84873077481
+training 5 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8616, 'ms')
+For testing data the RMSE is 2.64471193521
+training 6 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(12230, 'ms')
+For testing data the RMSE is 2.52999103243
+training 7 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(10381, 'ms')
+For testing data the RMSE is 2.45517466162
+training 8 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9559, 'ms')
+For testing data the RMSE is 2.40112258836
+training 9 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(12815, 'ms')
+For testing data the RMSE is 2.35940643235
+training 10 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(10514, 'ms')
+For testing data the RMSE is 2.32589016736
+training 11 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(10529, 'ms')
+For testing data the RMSE is 2.29813349094
+training 12 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(15255, 'ms')
+For testing data the RMSE is 2.27480666283
+training 13 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(11695, 'ms')
+For testing data the RMSE is 2.25493730933
+training 14 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(14271, 'ms')
+For testing data the RMSE is 2.23786745568
+training 15 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(16096, 'ms')
+For testing data the RMSE is 2.22307863643
+training 16 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(13752, 'ms')
+For testing data the RMSE is 2.21017949262
+rank = 12.
+training 1 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6508, 'ms')
+For testing data the RMSE is 7.02020888177
+training 2 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8208, 'ms')
+For testing data the RMSE is 4.54645950428
+training 3 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6840, 'ms')
+For testing data the RMSE is 3.21119776066
+training 4 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7151, 'ms')
+For testing data the RMSE is 2.81801049667
+training 5 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8038, 'ms')
+For testing data the RMSE is 2.63494257317
+training 6 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9423, 'ms')
+For testing data the RMSE is 2.52766780154
+training 7 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(10063, 'ms')
+For testing data the RMSE is 2.45510575056
+training 8 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(11418, 'ms')
+For testing data the RMSE is 2.40153220146
+training 9 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(12603, 'ms')
+For testing data the RMSE is 2.359777937
+training 10 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(11183, 'ms')
+For testing data the RMSE is 2.32593370217
+training 11 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(13696, 'ms')
+For testing data the RMSE is 2.29793048077
+training 12 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(12583, 'ms')
+For testing data the RMSE is 2.27430337037
+training 13 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(13338, 'ms')
+For testing data the RMSE is 2.25418184815
+training 14 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(15625, 'ms')
+For testing data the RMSE is 2.23689166442
+training 15 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(16977, 'ms')
+For testing data the RMSE is 2.22196051653
+training 16 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(17316, 'ms')
+For testing data the RMSE is 2.20898824386
+rank = 14.
+training 1 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6598, 'ms')
+For testing data the RMSE is 6.95130551667
+training 2 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6096, 'ms')
+For testing data the RMSE is 4.55755076271
+training 3 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7289, 'ms')
+For testing data the RMSE is 3.30469314691
+training 4 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7418, 'ms')
+For testing data the RMSE is 2.90251382954
+training 5 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8578, 'ms')
+For testing data the RMSE is 2.70388599733
+training 6 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9303, 'ms')
+For testing data the RMSE is 2.58269333987
+training 7 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(11206, 'ms')
+For testing data the RMSE is 2.49919020334
+training 8 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(12722, 'ms')
+For testing data the RMSE is 2.43682189772
+training 9 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(11935, 'ms')
+For testing data the RMSE is 2.38809601543
+training 10 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(13185, 'ms')
+For testing data the RMSE is 2.34861845809
+training 11 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(13363, 'ms')
+For testing data the RMSE is 2.31601733702
+training 12 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(18606, 'ms')
+For testing data the RMSE is 2.28860076468
+training 13 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(19509, 'ms')
+For testing data the RMSE is 2.26534455199
+training 14 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(17768, 'ms')
+For testing data the RMSE is 2.24543782744
+training 15 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(18956, 'ms')
+For testing data the RMSE is 2.22828413423
+training 16 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(19839, 'ms')
+For testing data the RMSE is 2.2134046514
+rank = 16.
+training 1 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(4990, 'ms')
+For testing data the RMSE is 6.83590082178
+training 2 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(6058, 'ms')
+For testing data the RMSE is 4.26702179495
+training 3 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(7215, 'ms')
+For testing data the RMSE is 3.22034809164
+training 4 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9902, 'ms')
+For testing data the RMSE is 2.8645707744
+training 5 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(8923, 'ms')
+For testing data the RMSE is 2.68055959993
+training 6 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(9910, 'ms')
+For testing data the RMSE is 2.56557266162
+training 7 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(12992, 'ms')
+For testing data the RMSE is 2.48521760247
+training 8 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(13164, 'ms')
+For testing data the RMSE is 2.42478203129
+training 9 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(12866, 'ms')
+For testing data the RMSE is 2.37709376714
+training 10 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(14175, 'ms')
+For testing data the RMSE is 2.33825654467
+training 11 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(18232, 'ms')
+For testing data the RMSE is 2.30599808497
+training 12 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(16041, 'ms')
+For testing data the RMSE is 2.27887118999
+training 13 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(18024, 'ms')
+For testing data the RMSE is 2.25578906008
+training 14 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(19984, 'ms')
+For testing data the RMSE is 2.2360095526
+training 15 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(19568, 'ms')
+For testing data the RMSE is 2.21893101521
+training 16 iteration.
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(22684, 'ms')
+For testing data the RMSE is 2.20410475813
+INFO:engine:Loading Books data...
+[(1, u'0195153448', u'Classical Mythology', u'Mark P. O. Morford', u'2002', u'Oxford University Press', u'http://images.amazon.com/images/P/0195153448.01.THUMBZZZ.jpg', u'http://images.amazon.com/images/P/0195153448.01.MZZZZZZZ.jpg', u'http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg'), (2, u'0002005018', u'Clara Callan', u'Richard Bruce Wright', u'2001', u'HarperFlamingo Canada', u'http://images.amazon.com/images/P/0002005018.01.THUMBZZZ.jpg', u'http://images.amazon.com/images/P/0002005018.01.MZZZZZZZ.jpg', u'http://images.amazon.com/images/P/0002005018.01.LZZZZZZZ.jpg'), (3, u'0060973129', u'Decision in Normandy', u"Carlo D'Este", u'1991', u'HarperPerennial', u'http://images.amazon.com/images/P/0060973129.01.THUMBZZZ.jpg', u'http://images.amazon.com/images/P/0060973129.01.MZZZZZZZ.jpg', u'http://images.amazon.com/images/P/0060973129.01.LZZZZZZZ.jpg')]
+INFO:engine:Loading All Ratings data...
+[(276726, 225830, 5.0), (276727, 11055, 5.0), (276729, 246855, 3.0)]
+training_RDD
+[(276726, 225830, 5.0), (276727, 11055, 5.0), (276729, 246855, 3.0)]
+validation_for_predict_RDD
+[]
+test_for_predict_RDD
+[]
+INFO:engine:Counting book ratings...
+INFO:engine:Training the ALS model...
+INFO:engine:ALS model built!
+(27899, 'ms')
+[16/Nov/2017:01:41:55] ENGINE Bus STARTING
+INFO:cherrypy.error:[16/Nov/2017:01:41:55] ENGINE Bus STARTING
+[16/Nov/2017:01:41:55] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[16/Nov/2017:01:41:55] ENGINE Started monitor thread '_TimeoutMonitor'.
+[16/Nov/2017:01:41:55] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[16/Nov/2017:01:41:55] ENGINE Started monitor thread 'Autoreloader'.
+[16/Nov/2017:01:41:55] ENGINE Serving on http://0.0.0.0:5432
+INFO:cherrypy.error:[16/Nov/2017:01:41:55] ENGINE Serving on http://0.0.0.0:5432
+[16/Nov/2017:01:41:55] ENGINE Bus STARTED
+INFO:cherrypy.error:[16/Nov/2017:01:41:55] ENGINE Bus STARTED
+[16/Nov/2017:02:16:12] ENGINE Restarting because /emr/spark-movie-lens/engine.py changed.
+INFO:cherrypy.error:[16/Nov/2017:02:16:12] ENGINE Restarting because /emr/spark-movie-lens/engine.py changed.
+[16/Nov/2017:02:16:12] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[16/Nov/2017:02:16:12] ENGINE Stopped thread 'Autoreloader'.
+[16/Nov/2017:02:16:12] ENGINE Bus STOPPING
+INFO:cherrypy.error:[16/Nov/2017:02:16:12] ENGINE Bus STOPPING
+[16/Nov/2017:02:16:12] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 5432)) shut down
+INFO:cherrypy.error:[16/Nov/2017:02:16:12] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 5432)) shut down
+[16/Nov/2017:02:16:12] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[16/Nov/2017:02:16:12] ENGINE Stopped thread '_TimeoutMonitor'.
+[16/Nov/2017:02:16:12] ENGINE Bus STOPPED
+INFO:cherrypy.error:[16/Nov/2017:02:16:12] ENGINE Bus STOPPED
+[16/Nov/2017:02:16:12] ENGINE Bus EXITING
+INFO:cherrypy.error:[16/Nov/2017:02:16:12] ENGINE Bus EXITING
+[16/Nov/2017:02:16:12] ENGINE Bus EXITED
+INFO:cherrypy.error:[16/Nov/2017:02:16:12] ENGINE Bus EXITED
+[16/Nov/2017:02:16:13] ENGINE Waiting for child threads to terminate...
+INFO:cherrypy.error:[16/Nov/2017:02:16:13] ENGINE Waiting for child threads to terminate...
+[16/Nov/2017:02:16:13] ENGINE Re-spawning python /emr/spark-movie-lens/server.py
+INFO:cherrypy.error:[16/Nov/2017:02:16:13] ENGINE Re-spawning python /emr/spark-movie-lens/server.py
+Traceback (most recent call last):
+  File "/emr/spark-movie-lens/server.py", line 38, in <module>
+    sc = init_spark_context()
+  File "/emr/spark-movie-lens/server.py", line 10, in init_spark_context
+    sc = SparkContext(conf=conf, pyFiles=['engine.py', 'app.py'])
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/context.py", line 118, in __init__
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/context.py", line 180, in _do_init
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/context.py", line 273, in _initialize_context
+  File "/usr/lib/spark/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1401, in __call__
+  File "/usr/lib/spark/python/lib/py4j-0.10.4-src.zip/py4j/protocol.py", line 319, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling None.org.apache.spark.api.java.JavaSparkContext.
+: org.apache.spark.SparkException: Only one SparkContext may be running in this JVM (see SPARK-2243). To ignore this error, set spark.driver.allowMultipleContexts = true. The currently running SparkContext was created at:
+org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+py4j.Gateway.invoke(Gateway.java:236)
+py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+py4j.GatewayConnection.run(GatewayConnection.java:214)
+java.lang.Thread.run(Thread.java:748)
+	at org.apache.spark.SparkContext$$anonfun$assertNoOtherContextIsRunning$2.apply(SparkContext.scala:2472)
+	at org.apache.spark.SparkContext$$anonfun$assertNoOtherContextIsRunning$2.apply(SparkContext.scala:2468)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.SparkContext$.assertNoOtherContextIsRunning(SparkContext.scala:2468)
+	at org.apache.spark.SparkContext$.markPartiallyConstructed(SparkContext.scala:2557)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:85)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:236)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.GatewayConnection.run(GatewayConnection.java:214)
+	at java.lang.Thread.run(Thread.java:748)
+

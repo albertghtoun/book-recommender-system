@@ -4,6 +4,7 @@ from pyspark.mllib.recommendation import ALS
 from pyspark.mllib.recommendation import MatrixFactorizationModel
 import logging
 from subprocess import call
+import time
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -16,6 +17,16 @@ def get_counts_and_averages(ID_and_ratings_tuple):
     nratings = len(ID_and_ratings_tuple[1])
     return ID_and_ratings_tuple[0], (nratings, float(sum(x for x in ID_and_ratings_tuple[1]))/nratings)
 
+def timeme(method):
+    def wrapper(*args, **kw):
+        startTime = int(round(time.time() * 1000))
+        result = method(*args, **kw)
+        endTime = int(round(time.time() * 1000))
+
+        print(endTime - startTime,'ms')
+        return result
+
+    return wrapper
 
 class RecommendationEngine:
     """A book recommendation engine
@@ -31,6 +42,7 @@ class RecommendationEngine:
         self.books_rating_counts_RDD = book_ID_with_avg_ratings_RDD.map(lambda x: (x[0], x[1][0]))
 
 
+    @timeme
     def __train_model(self):
         """Train the ALS model with the current dataset
         """
@@ -198,6 +210,14 @@ class RecommendationEngine:
         #for itr in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]:
         #print "training %d iteration." % (itr)          
         self.iterations = 16
+
+        
+        # for _rank in [2, 4, 6, 8, 10, 12, 14, 16]:
+        #    print "rank = %d." % (_rank)
+        #    for itr in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]:
+        #        print "training %d iteration." % (itr)
+        #        self.iterations = itr
+        #        self.best_rank = _rank
             # Train the model
         self.__train_model()
             # Test the model
